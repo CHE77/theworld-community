@@ -1,7 +1,9 @@
 ---
+pageId: participatory-economy
+lang: ru
 title: "Экономика Участия"
 layout: "layout.njk"
-permalink: "/participatory-economy/"
+permalink: "/ru/participatory-economy/"
 ---
 
 # Экономика Участия

@@ -1,25 +1,47 @@
+{% set currentLang = page.lang or siteLanguages.defaultLang %}
+{% set currentLang = currentLang if currentLang != 'neutral' else siteLanguages.defaultLang %}
+{% set currentPageId = page.pageId or 'home' %}
+{% set currentPageTranslations = pages[currentPageId] or {} %}
+
 <!doctype html>
-<html lang="ru">
+<html lang="{{ currentLang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title or 'Мировая Община' }}</title>
     <meta name="description" content="{{ description or 'Мировая Община' }}">
     <link rel="stylesheet" href="/css/styles.css">
+
+    {% for lang in siteLanguages.languages %}
+      {% set target = currentPageTranslations[lang.code] or (pages.home and pages.home[lang.code]) or ('/' + lang.code + '/') %}
+      <link rel="alternate" hreflang="{{ lang.code }}" href="{{ target }}">
+    {% endfor %}
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
+      <div class="container header-row">
         <div class="brand-wrap">
           <a href="/" class="brand">Мировая Община</a>
         </div>
-        <nav class="main-nav" aria-label="Основная навигация">
-          <a href="/">Главная</a>
-          <a href="/community/">Мировая Община</a>
-          <a href="/participatory-economy/">Экономика Участия</a>
-          <a href="/renumeration-system-parus/">ПАРУС</a>
-          <a href="/charter/">Устав</a>
+
+        <nav class="main-nav" aria-label="{{ siteLanguages.labels[currentLang] }}">
+          {% for item in navigation[currentLang] %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+          {% endfor %}
         </nav>
+
+        <div class="lang-switcher" aria-label="Language switcher">
+          {% for lang in siteLanguages.languages %}
+            {% set target = currentPageTranslations[lang.code] or (pages.home and pages.home[lang.code]) or ('/' + lang.code + '/') %}
+            {% if lang.code == currentLang %}
+              <span class="lang-link active" aria-current="page">{{ lang.code | upper }}</span>
+            {% elif currentPageTranslations[lang.code] %}
+              <a class="lang-link" href="{{ target }}">{{ lang.code | upper }}</a>
+            {% else %}
+              <span class="lang-link unavailable" aria-disabled="true">{{ lang.code | upper }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
     </header>
 

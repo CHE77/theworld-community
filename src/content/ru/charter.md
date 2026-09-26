@@ -1,7 +1,9 @@
 ---
+pageId: charter
+lang: ru
 title: "Устав Общины"
 layout: "layout.njk"
-permalink: "/charter/"
+permalink: "/ru/charter/"
 ---
 
 # Устав Общины

@@ -1,7 +1,9 @@
 ---
-title: "Система Учёта ПАРУС"
+pageId: parus
+lang: ru
+title: "ПАРУС"
 layout: "layout.njk"
-permalink: "/renumeration-system-parus/"
+permalink: "/ru/parus/"
 ---
 
 # Система Учёта ПАРУС

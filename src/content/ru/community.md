@@ -1,7 +1,9 @@
 ---
+pageId: community
+lang: ru
 title: "Мировая Община"
 layout: "layout.njk"
-permalink: "/community/"
+permalink: "/ru/community/"
 ---
 
 # Мировая Община
