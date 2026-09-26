@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or 'Мировая Община' }}</title>
+    <meta name="description" content="{{ description or 'Мировая Община' }}">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand-wrap">
+          <a href="/" class="brand">Мировая Община</a>
+        </div>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="/">Главная</a>
+          <a href="/community/">Мировая Община</a>
+          <a href="/participatory-economy/">Экономика Участия</a>
+          <a href="/renumeration-system-parus/">ПАРУС</a>
+          <a href="/charter/">Устав</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="container">
+        {{ content | safe }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Мировая Община</p>
+      </div>
+    </footer>
+  </body>
+</html>
