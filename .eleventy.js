@@ -1,7 +1,9 @@
 const normalizeBasePath = (value) => {
   const trimmed = (value || '').trim();
   if (!trimmed || trimmed === '/') return '';
-  return `/${trimmed.replace(/^\\/+|\\/+$/g, '')}`;
+  const withoutLeading = trimmed.replace(/^\/+/, '');
+  const withoutTrailing = withoutLeading.replace(/\/+$/, '');
+  return withoutTrailing ? `/${withoutTrailing}` : '';
 };
 
 module.exports = function (eleventyConfig) {
@@ -20,8 +22,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addTransform('site-base-path', function (content, outputPath) {
       if (!outputPath || !outputPath.endsWith('.html')) return content;
       return content
-        .replace(/\\b(href|src)="\\/(?!\\/)/g, `$1="${basePath}/`)
-        .replace(/\\b(href|src)='\\/(?!\\/)/g, `$1='${basePath}/`);
+        .replace(/\b(href|src)="\/(?!\/)/g, `$1="${basePath}/`)
+        .replace(/\b(href|src)='\/(?!\/)/g, `$1='${basePath}/`);
     });
   }
 
