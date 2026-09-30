@@ -24,13 +24,13 @@
           <a href="/" class="brand">Мировая Община</a>
         </div>
 
-        <nav class="main-nav" aria-label="{{ siteLanguages.labels[currentLang] }}">
+        <nav class="main-nav desktop-nav" aria-label="{{ siteLanguages.labels[currentLang] }}">
           {% for item in navigation[currentLang] %}
             <a href="{{ item.url }}">{{ item.label }}</a>
           {% endfor %}
         </nav>
 
-        <div class="lang-switcher" aria-label="Language switcher">
+        <div class="lang-switcher desktop-lang-switcher" aria-label="Language switcher">
           {% for lang in siteLanguages.languages %}
             {% set target = currentPageTranslations[lang.code] or (pages.home and pages.home[lang.code]) or ('/' + lang.code + '/') %}
             {% if lang.code == currentLang %}
@@ -42,6 +42,34 @@
             {% endif %}
           {% endfor %}
         </div>
+
+        <details class="mobile-menu">
+          <summary>
+            <span class="menu-icon" aria-hidden="true">☰</span>
+            <span>Меню</span>
+          </summary>
+
+          <div class="mobile-menu-panel">
+            <nav class="mobile-nav" aria-label="{{ siteLanguages.labels[currentLang] }}">
+              {% for item in navigation[currentLang] %}
+                <a href="{{ item.url }}">{{ item.label }}</a>
+              {% endfor %}
+            </nav>
+
+            <div class="mobile-lang-switcher" aria-label="Language switcher">
+              {% for lang in siteLanguages.languages %}
+                {% set target = currentPageTranslations[lang.code] or (pages.home and pages.home[lang.code]) or ('/' + lang.code + '/') %}
+                {% if lang.code == currentLang %}
+                  <span class="lang-link active" aria-current="page">{{ lang.code | upper }}</span>
+                {% elif currentPageTranslations[lang.code] %}
+                  <a class="lang-link" href="{{ target }}">{{ lang.code | upper }}</a>
+                {% else %}
+                  <span class="lang-link unavailable" aria-disabled="true">{{ lang.code | upper }}</span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </details>
       </div>
     </header>
 
