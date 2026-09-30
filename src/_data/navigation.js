@@ -2,6 +2,8 @@ module.exports = {
   ru: [
     { label: 'Мировая Община', url: '/ru/community/', pageId: 'community' },
     { label: 'Экономика Участия', url: '/ru/participatory-economy/', pageId: 'participatory-economy' },
+    { label: 'Кооперативы', url: '/ru/cooperatives/', pageId: 'cooperatives' },
+    { label: 'Планирование', url: '/ru/participatory-planning/', pageId: 'participatory-planning' },
     { label: 'ПАРУС', url: '/ru/parus/', pageId: 'parus' },
     { label: 'Устав', url: '/ru/charter/', pageId: 'charter' }
   ],
