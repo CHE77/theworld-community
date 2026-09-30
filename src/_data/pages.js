@@ -15,6 +15,12 @@ module.exports = {
     en: '/en/participatory-economy/',
     uk: '/uk/participatory-economy/'
   },
+  cooperatives: {
+    ru: '/ru/cooperatives/'
+  },
+  'participatory-planning': {
+    ru: '/ru/participatory-planning/'
+  },
   parus: {
     ru: '/ru/parus/',
     en: '/en/parus/',
