@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 500" role="img" aria-labelledby="title desc">
+<title id="title">Два кооператива — один участник</title>
+<desc id="desc">Участник сообщает потребности в потребительском контуре и ресурсы, квалификацию и время в производственном. Оба контура согласуют план; фактический результат уточняет следующий цикл.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#26745a"/></marker></defs>
+<rect width="440" height="500" rx="20" fill="#f4f9f6"/>
+<g fill="none" stroke="#26745a" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M220 90V116H112V149"/><path d="M220 116H328V149"/>
+<path d="M112 265V292H220V321"/><path d="M328 265V292H220"/>
+<path d="M220 379V408"/>
+</g>
+<g fill="#fff" stroke="#aac8b8" stroke-width="1.5">
+<rect x="95" y="24" width="250" height="66" rx="12"/>
+<rect x="20" y="152" width="185" height="112" rx="12"/><rect x="235" y="152" width="185" height="112" rx="12"/>
+<rect x="60" y="323" width="320" height="56" rx="12"/><rect x="60" y="410" width="320" height="56" rx="12"/>
+</g>
+<g font-family="Arial, sans-serif" fill="#163b2c" text-anchor="middle" font-size="20">
+<text x="220" y="63" font-weight="700">Один участник</text>
+<text x="112" y="182" font-size="17" font-weight="700"><tspan x="112">Потребительский</tspan><tspan x="112" dy="26">кооператив</tspan></text>
+<text x="112" y="242" font-size="18">Потребности</text>
+<text x="328" y="182" font-size="16" font-weight="700"><tspan x="328">Производственный</tspan><tspan x="328" dy="26">кооператив</tspan></text>
+<text x="328" y="237" font-size="17"><tspan x="328">Ресурсы, навыки,</tspan><tspan x="328" dy="20">рабочее время</tspan></text>
+<text x="220" y="357" font-weight="700">Согласованный план</text>
+<text x="220" y="444" font-weight="700">Исполнение и уточнение</text>
+</g>
+</svg>

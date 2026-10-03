@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 394" role="img" aria-labelledby="title desc">
+<title id="title">Два регистра общественного капитала</title>
+<desc id="desc">Один хозяйственный результат связан с реестром ресурсов и персональным реестром участия. Эти записи сверяют по принятым правилам оценки, но не складывают в двойной капитал.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#26745a"/></marker></defs>
+<rect width="440" height="394" rx="20" fill="#f4f9f6"/>
+<g fill="none" stroke="#26745a" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M220 90V118H113V153"/><path d="M220 118H327V153"/>
+</g>
+<g fill="#fff" stroke="#aac8b8" stroke-width="1.5">
+<rect x="45" y="24" width="350" height="66" rx="12"/>
+<rect x="20" y="156" width="186" height="137" rx="12"/><rect x="234" y="156" width="186" height="137" rx="12"/>
+</g>
+<g font-family="Arial, sans-serif" fill="#163b2c" text-anchor="middle" font-size="20">
+<text x="220" y="64" font-weight="700">Хозяйственный результат</text>
+<text x="113" y="188" font-weight="700"><tspan x="113">Реестр</tspan><tspan x="113" dy="26">ресурсов</tspan></text>
+<text x="113" y="250" font-size="18"><tspan x="113">Что создано</tspan><tspan x="113" dy="23">и сохраняется</tspan></text>
+<text x="327" y="188" font-weight="700"><tspan x="327">Реестр</tspan><tspan x="327" dy="26">участия</tspan></text>
+<text x="327" y="241" font-size="18"><tspan x="327">Кто участвовал</tspan><tspan x="327" dy="21">и на каких</tspan><tspan x="327" dy="21">условиях</tspan></text>
+<text x="220" y="335" font-weight="700">Один капитал — два регистра</text>
+<text x="220" y="366" font-size="18">Сверять, а не складывать</text>
+</g>
+</svg>
