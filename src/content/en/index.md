@@ -14,4 +14,4 @@ permalink: "/en/"
 - [English](/en/)
 - [Українська](/uk/)
 
-This is a neutral language-selection page. It does not force browser-based redirect.
+The detailed current edition is available in Russian. The English translation is in preparation.

@@ -8,7 +8,7 @@ permalink: "/en/community/"
 
 # World Community
 
-This page is a temporary technical placeholder for the English-language version of the site. The original Russian content remains the source and is intentionally not rewritten.
+This page is a temporary technical placeholder for the English-language version of the site. The current Russian edition is the source. This page does not yet contain its full translation.
 
 ## Placeholder note
 

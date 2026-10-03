@@ -1,39 +1,60 @@
 module.exports = {
-  home: {
-    ru: '/ru/',
-    en: '/en/',
-    uk: '/uk/',
-    neutral: '/'
+  "home": {
+    "ru": "/ru/",
+    "en": "/en/",
+    "uk": "/uk/",
+    "neutral": "/"
   },
-  community: {
-    ru: '/ru/community/',
-    en: '/en/community/',
-    uk: '/uk/community/'
+  "charter": {
+    "en": "/en/charter/",
+    "ru": "/ru/charter/",
+    "uk": "/uk/charter/"
   },
-  'participatory-economy': {
-    ru: '/ru/participatory-economy/',
-    en: '/en/participatory-economy/',
-    uk: '/uk/participatory-economy/'
+  "community": {
+    "en": "/en/community/",
+    "ru": "/ru/community/",
+    "uk": "/uk/community/"
   },
-  cooperatives: {
-    ru: '/ru/cooperatives/'
+  "participatory-economy": {
+    "en": "/en/participatory-economy/",
+    "ru": "/ru/participatory-economy/",
+    "uk": "/uk/participatory-economy/"
   },
-  'participatory-planning': {
-    ru: '/ru/participatory-planning/'
+  "parus": {
+    "en": "/en/parus/",
+    "ru": "/ru/parus/",
+    "uk": "/uk/parus/"
   },
-  parus: {
-    ru: '/ru/parus/',
-    en: '/en/parus/',
-    uk: '/uk/parus/'
+  "cooperatives": {
+    "ru": "/ru/cooperatives/"
   },
-  charter: {
-    ru: '/ru/charter/',
-    en: '/en/charter/',
-    uk: '/uk/charter/'
+  "participatory-planning": {
+    "ru": "/ru/participatory-planning/"
   },
-  'renumeration-system-parus': {
-    ru: '/ru/renumeration-system-parus/',
-    en: '/en/renumeration-system-parus/',
-    uk: '/uk/renumeration-system-parus/'
+  "qualification": {
+    "ru": "/ru/qualification/"
+  },
+  "capital": {
+    "ru": "/ru/capital/"
+  },
+  "governance": {
+    "ru": "/ru/governance/"
+  },
+  "participation": {
+    "ru": "/ru/participation/"
+  },
+  "funds": {
+    "ru": "/ru/funds/"
+  },
+  "development": {
+    "ru": "/ru/development/"
+  },
+  "glossary": {
+    "ru": "/ru/glossary/"
+  },
+  "renumeration-system-parus": {
+    "ru": "/ru/renumeration-system-parus/",
+    "en": "/en/renumeration-system-parus/",
+    "uk": "/uk/renumeration-system-parus/"
   }
 };
