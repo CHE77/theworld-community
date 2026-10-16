@@ -264,3 +264,9 @@ a:focus-visible, summary:focus-visible, .table-scroll:focus-visible { outline: 3
   .formula { font-size: 1rem; padding: .8rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Accessible diagrams for P2P credit paths and account balances. */
+.article-content .p2p-figure { max-width: 680px; margin: 1.5rem auto; padding: .6rem; border: 1px solid var(--line); border-radius: 12px; background: #f9fbf9; overflow-x: auto; }
+.article-content .p2p-figure img[src$=".svg"] { display: block; width: 100%; max-width: none; height: auto; margin: 0 auto; border-radius: 0; }
+.article-content .p2p-figure figcaption { max-width: 76ch; margin: .3rem .6rem .4rem; color: var(--muted); font-size: .87rem; line-height: 1.5; }
+@media (max-width: 620px) { .article-content .p2p-figure img[src$=".svg"] { min-width: 530px; } }

@@ -25,6 +25,9 @@ module.exports = {
     "ru": "/ru/parus/",
     "uk": "/uk/parus/"
   },
+  "p2p-finance": {
+    "ru": "/ru/p2p-finance/"
+  },
   "cooperatives": {
     "ru": "/ru/cooperatives/"
   },

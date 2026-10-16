@@ -11,6 +11,12 @@ module.exports = {
       "pageId": "participatory-economy"
     },
     {
+      "label": "P2P-финансы",
+      "url": "/ru/p2p-finance/",
+      "pageId": "p2p-finance",
+      "secondary": true
+    },
+    {
       "label": "Кооперативы",
       "url": "/ru/cooperatives/",
       "pageId": "cooperatives"
