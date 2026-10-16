@@ -270,3 +270,7 @@ a:focus-visible, summary:focus-visible, .table-scroll:focus-visible { outline: 3
 .article-content .p2p-figure img[src$=".svg"] { display: block; width: 100%; max-width: none; height: auto; margin: 0 auto; border-radius: 0; }
 .article-content .p2p-figure figcaption { max-width: 76ch; margin: .3rem .6rem .4rem; color: var(--muted); font-size: .87rem; line-height: 1.5; }
 @media (max-width: 620px) { .article-content .p2p-figure img[src$=".svg"] { min-width: 530px; } }
+
+/* Full-width sequential credit-line infographic: readable on desktop, scrollable on phones. */
+.article-content .p2p-figure.p2p-figure-wide { max-width: 1040px; }
+.article-content .p2p-figure.p2p-figure-wide img[src$=".svg"] { min-width: 820px; }
