@@ -281,3 +281,63 @@ a:focus-visible, summary:focus-visible, .table-scroll:focus-visible { outline: 3
 /* Full-width sequential credit-line infographic: readable on desktop, scrollable on phones. */
 .article-content .p2p-figure.p2p-figure-wide { max-width: 1040px; }
 .article-content .p2p-figure.p2p-figure-wide img[src$=".svg"] { min-width: 820px; }
+
+/* Embedded supporting videos. */
+.article-content .video-callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: min(100%, 820px);
+  margin: 1.5rem auto 2rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #cfe6d7;
+  border-left: 5px solid var(--brand);
+  border-radius: 10px;
+  background: var(--brand-soft);
+}
+.article-content .video-callout-icon {
+  display: grid;
+  flex: 0 0 2.6rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--brand);
+  color: white;
+  font-size: 1rem;
+  line-height: 1;
+}
+.article-content .video-callout p { margin: 0; }
+.article-content .video-callout a { font-weight: 700; }
+.article-content .video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem auto 2rem;
+  max-width: 1040px;
+}
+.article-content .anchor-target { display: block; scroll-margin-top: 12rem; }
+.article-content .video-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f9fbf9;
+}
+.article-content .video-card iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.article-content .video-card figcaption {
+  padding: .75rem 1rem .9rem;
+  color: var(--text);
+  font-size: .92rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+@media (max-width: 700px) {
+  .article-content .anchor-target { scroll-margin-top: 5rem; }
+  .article-content .video-grid { grid-template-columns: 1fr; }
+}
